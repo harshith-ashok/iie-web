@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
+/* Theme Variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #ffcc00;
+  --secondary-color: #ff8800;
+  --border-glow: 2px solid rgba(255, 204, 0, 0.7);
 }
 
 @theme inline {
@@ -24,3 +28,397 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Apply a gradient background to the entire page */
+body {
+  background: linear-gradient(to right, #3b82f6, #a855f7, #ec4899);
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the Programs page container */
+.programs-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style headings */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Style cards or sections */
+.card {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px auto;
+  width: 80%;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a hover effect */
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+/* Background with gradient */
+.programs-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #3b82f6, #a855f7, #ec4899);
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Animated Heading */
+.programs-heading {
+  text-align: center;
+  font-size: 3.5rem;  /* Increase font size */
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(219, 15, 140, 0.952);  /* Add glow effect */
+  margin-bottom: 10px; /* Adjust spacing */
+  margin-top: 150px; /* Add spacing */
+  display: block; /* Ensure it’s visible */
+  opacity: 1; /* Ensure it’s not hidden */
+  position: relative; /* Reset if it was absolute */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+
+/* Grid Layout for Programs */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Glassmorphism Effect for Cards */
+.program-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.program-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Program Image */
+.program-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Program Title */
+.program-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Program Description */
+.program-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 10px;
+}
+
+/* Shining Text Effect */
+.subtitle {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 10px rgba(219, 15, 140, 0.952), 
+               0 0 20px rgba(219, 15, 140, 0.952), 
+               0 0 30px rgba(219, 15, 140, 0.952);
+  animation: shine 2s infinite alternate, wave 3s infinite ease-in-out;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  display: inline-block; /* Needed for movement */
+  margin-top: 10px; /* Adjust spacing */
+}
+
+/* Keyframe Animation for Shining Effect */
+@keyframes shine {
+  from {
+    text-shadow: 0 0 5px rgba(219, 15, 140, 0.952), 
+                 0 0 10px rgba(219, 15, 140, 0.952);
+  }
+  to {
+    text-shadow: 0 0 15px rgba(219, 15, 140, 0.952), 
+                 0 0 30px rgba(219, 15, 140, 0.952), 
+                 0 0 40px rgba(219, 15, 140, 0.952);
+  }
+}
+/* Keyframe Animation for Wavy Side-to-Side Motion */
+@keyframes wave {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background: linear-gradient(to right, #3b82f6, #a855f7, #ec4899);
+}
+
+/* Logo Styling */
+.logo {
+  width: 150px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Centered Title */
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+  text-align: center;
+  flex-grow: 1;
+  margin-top: 10px;
+}
+
+/* Bottom Section */
+.bottom-section {
+  background: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active a {
+  color:#2563eb;
+  font-weight: bold;
+}
+
+/* Underline Effect */
+.nav-links li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #2563eb;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.nav-links li:hover::after,
+.nav-links .active::after {
+  width: 100%;
+}
+
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+/* Active & Hover States */
+.nav-links li a:hover,
+.nav-links li.active a { /* FIX: Target active link properly */
+  color: purple;
+  font-weight: bold;
+}
+
+/* Underline Effect */
+.nav-links li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: purple;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+/* ✅ Ensure the underline appears for the active link */
+.nav-links li:hover::after,
+.nav-links li.active::after {
+  width: 100%;
+}
+
+
+/* Facilities Page Styling */
+.facilities-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #3b82f6, #a855f7, #ec4899);
+  padding: 100px 20px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facilities-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.facilities-description {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 10px rgba(219, 15, 140, 0.952), 
+               0 0 20px rgba(219, 15, 140, 0.952), 
+               0 0 30px rgba(219, 15, 140, 0.952);
+  animation: shine 2s infinite alternate, wave 3s infinite ease-in-out;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  display: inline-block; /* Needed for movement */
+  margin-top: 10px; /* Adjust spacing */
+}
+
+/* Keyframe Animation for Shining Effect */
+@keyframes shine {
+  from {
+    text-shadow: 0 0 5px rgba(219, 15, 140, 0.952), 
+                 0 0 10px rgba(219, 15, 140, 0.952);
+  }
+  to {
+    text-shadow: 0 0 15px rgba(219, 15, 140, 0.952), 
+                 0 0 30px rgba(219, 15, 140, 0.952), 
+                 0 0 40px rgba(219, 15, 140, 0.952);
+  }
+}
+/* Keyframe Animation for Wavy Side-to-Side Motion */
+@keyframes wave {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+
+/* Grid Layout for Facilities */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+*/* 🌟 Facility Cards */
+.facility-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.facility-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Facility Images */
+.facility-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.facility-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.facility-description {
+  font-size: 1.2rem;
+}
+
+
+
+
+

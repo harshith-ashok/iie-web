@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Navbar from "../components/Navbar"; // ✅ Adjusted import path
+
 
 const AboutUsPage = () => {
   return (
