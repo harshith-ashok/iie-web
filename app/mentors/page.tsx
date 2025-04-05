@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "../components/ui/card";
-import { cn } from "../../app/lib/utils";
+
 import MentorCard from "../components/MentorCard";
 
 const Mentors = () => {

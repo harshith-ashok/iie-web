@@ -13,7 +13,7 @@ const Events = () => {
             </div>
           <div className="w-20 h-1 bg-orange-500 mb-6 mx-auto"></div>
           <p className="text-white max-w-4xl text-lg md:text-xl mx-auto text-center mb-8">
-            The Institution&apos;s Innovation Council (IIC) at the IIE Centre is a
+            The Institutions Innovation Council (IIC) at the IIE Centre is a
             dynamic hub dedicated to fostering an entrepreneurial mindset,
             sharpening technical expertise, and expanding professional networks
             among students.

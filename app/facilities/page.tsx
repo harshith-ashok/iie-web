@@ -1,6 +1,6 @@
 "use client"; // Needed for Framer Motion animations in Next.js App Router
 import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
+
 import '../globals.css'; // Ensure styles are imported
 
 export default function Facilities() {
