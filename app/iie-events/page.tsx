@@ -1,19 +1,19 @@
 import React from "react";
-import { Card, CardContent } from "../components/ui/card";
+import { Card } from "../components/ui/card";
 
 const Events = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-lexend">
       {/* Hero Section */}
-      <div className="relative bg-gray-900 py-16">
+      <div className="relative bg-black py-16">
         <div className="absolute inset-0 bg-black/70 z-0"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">
-            IIC and Events
-          </h1>
+        <div className="container mx-auto px-4 relative z-10 py-8">
+          <div className="bg-black text-white text-xl md:text-5xl leading-relaxed font-bold font-lexend text-center mb-6">
+              IIC & Events
+            </div>
           <div className="w-20 h-1 bg-orange-500 mb-6 mx-auto"></div>
           <p className="text-white max-w-4xl text-lg md:text-xl mx-auto text-center mb-8">
-            The Institution's Innovation Council (IIC) at the IIE Centre is a
+            The Institution&apos;s Innovation Council (IIC) at the IIE Centre is a
             dynamic hub dedicated to fostering an entrepreneurial mindset,
             sharpening technical expertise, and expanding professional networks
             among students.

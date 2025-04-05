@@ -56,15 +56,15 @@ const Mentors = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 font-lexend">
       {/* Hero Section */}
       <div className="bg-black text-white">
         <div className="container mx-auto py-28 px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">
-            Our Mentors
-          </h1>
+          <div className="bg-black text-white text-xl md:text-5xl leading-relaxed font-bold font-lexend text-center mb-6">
+              Mentors
+            </div>
           <div className="w-20 h-1 bg-orange-500 mb-6 mx-auto"></div>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-center">
+          <p className="text-xl md:text-xl max-w-3xl mx-auto text-center">
             Our mentors are seasoned professionals from diverse industries,
             offering invaluable guidance to help startups navigate challenges
             and succeed.

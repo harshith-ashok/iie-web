@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar"; // Absolute import
-import Footer from "./components/Footer"; // Absolute import
 
 
 export const metadata: Metadata = {
@@ -14,10 +13,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-white flex flex-col min-h-screen">
+      <body className="antialiased bg-white flex flex-col">
         <Navbar />
-        <main className="flex-grow bg-white">{children}</main>
-        <Footer />
+        <main className="bg-white">{children}</main>
       </body>
     </html>
   );

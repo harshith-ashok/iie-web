@@ -18,7 +18,7 @@ const products: ProductType[] = [
   },
   {
     id: 2,
-    section: "Pages",
+    section: "",
     link: ["IIC Events", "Insights", "Apply Now", "Contact Us"],
     ref: ["/iie-events", "/insights", "/apply-now", "/contact-us"],
   },
@@ -26,7 +26,7 @@ const products: ProductType[] = [
 
 const Footer = () => {
   return (
-    <div className="bg-black" id="footer">
+    <div className="bg-black font-lexend" id="footer">
       <div className="mx-auto max-w-2xl pt-16 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           {/* COLUMN-1 */}
@@ -95,10 +95,10 @@ const Footer = () => {
               </p>
               <ul>
                 {product.link.map((link: string, index: number) => (
-                  <li key={index} className="mb-5">
+                  <li key={index} className="mb-5 ">
                     <Link
                       href={product.ref[index]}
-                      className="text-white text-lg font-normal mb-6 hover:text-orange-500 transition-colors duration-300"
+                      className="text-white text-lg font-bold mb-6 hover:text-orange-500 transition-colors duration-300"
                     >
                       {link}
                     </Link>
@@ -149,7 +149,7 @@ const Footer = () => {
         </div>
         </div>
       </div>
-      <div className="text-center mt-4 text-gray-400">
+      <div className="text-center mt-4 text-gray-400 pb-5">
         Made with ❤️ by IIE TEAM
       </div>
     </div>

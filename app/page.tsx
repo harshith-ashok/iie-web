@@ -1,6 +1,8 @@
+import Footer from "./components/Footer";
+
 export default function Home() {
   return (
-    <div className="text-black h-full bg-white">
+    <div className="text-black h-screen bg-white">
       {/* Black overlay */}
       <div className="relative bg-[url(https://fab-lab-iie.vercel.app/home-3.jpg)] h-[65%] bg-cover rounded-4xl m-5">
         <div className="absolute inset-0 bg-black opacity-40 rounded-4xl"></div>
@@ -150,6 +152,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
