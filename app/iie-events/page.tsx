@@ -124,7 +124,7 @@ const Events = () => {
                       The Building Real-Time Apps workshop is a cutting-edge
                       training program tailored to equip students with the
                       skills to develop dynamic, scalable applications that
-                      thrive in today's digital ecosystem. Conducted in a
+                      thrive in todays digital ecosystem. Conducted in a
                       state-of-the-art lab setting, participants master
                       industry-standard tools—Redis for high-speed data
                       management, Socket.io for seamless real-time
