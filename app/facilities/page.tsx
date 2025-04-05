@@ -26,7 +26,7 @@ export default function Facilities() {
   return (
     <>
       {/* Include Navbar */}
-      <Navbar />
+
 
       <div className="facilities-container">
         {/* Heading Animation */}

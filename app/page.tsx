@@ -1,103 +1,68 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="text-black h-full bg-white">
+      {/* Black overlay */}
+      <div className="relative bg-[url(https://fab-lab-iie.vercel.app/home-3.jpg)]  h-[65%] bg-cover rounded-4xl m-5">
+        <div className="absolute inset-0 bg-black opacity-40 rounded-4xl"></div>
+        <div className="relative z-10 text-white flex items-center pl-[10%] h-full">
+          <div className="flex flex-col gap-5">
+            <div className="text-5xl leading-relaxed font-bold font-lexend">
+              Innovating today,
+              <br /> Empowering startups
+            </div>
+            <div className="font-lexend">
+              Collaborate, create, and innovate in the realm of deep
+              technologies. Join us to build the future today.
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="flex flex-col md:flex-row justify-between p-20 gap-20 bg-blue-50">
+        <div>
+          <div className="bg-[url(https://fab-lab-iie.vercel.app/_next/image?url=%2Foverview-1.jpg&w=3840&q=75)] bg-cover rounded-xl h-60 md:w-200 md:h-128"></div>
+        </div>
+        <div className="flex gap-5 flex-col">
+          <div className="font-lexend font-bold text-4xl">Overview</div>
+          <div className="font-lexend leading-relaxed">
+            The Innovation, Incubation, and Entrepreneurship (IIE) Cell is
+            dedicated to nurturing entrepreneurial talent and transforming
+            innovative ideas into impactful ventures. With a strong focus on
+            mentorship, structured programs, and access to essential resources,
+            IIE creates an environment where creativity thrives and startups can
+            scale into sustainable enterprises. By bridging the gap between
+            academia and industry, we provide aspiring entrepreneurs with the
+            tools and opportunities needed to bring their visions to life. As a
+            key part of a broader innovation ecosystem, IIE collaborates with
+            industry leaders, academic experts, and government bodies to foster
+            a culture of inclusivity and shared learning. Our initiatives are
+            designed to inspire curiosity, encourage collaboration, and
+            challenge conventional thinking, equipping individuals with the
+            skills and confidence to drive meaningful change. Through this
+            approach, we empower the next generation of innovators to build
+            solutions that make a lasting impact on society.
+          </div>
+        </div>
+      </div>
+      <div className="relative bg-[url(https://fab-lab-iie.vercel.app/_next/image?url=%2Fmission.jpg&w=3840&q=75)] my-20 h-[65%] bg-cover rounded-4xl m-5 p-10">
+        <div className="absolute inset-0 bg-black opacity-40 rounded-4xl"></div>
+        <div className="relative z-10 text-white flex flex-col gap-5 p-10 h-full">
+          <div className="text-5xl leading-relaxed font-bold font-lexend">
+            Misson
+          </div>
+          <div>
+            To create an ecosystem that sensitizes, engages, and supports
+            innovators from ideation to product development, enabling the
+            innovation community with access to best-in-class infrastructure,
+            mentorship, and funding while protecting the intellectual assets
+            evolved from inventive processes.
+          </div>
+          <div className="absolute inset-x-0 bottom-0 font-lexend p-5 flex gap-10">
+            <a href="/apply-now" className="p-5 bg-amber-300 text-black rounded-4xl hover:bg-amber-500 transition-all">Apply for Incubation</a>
+            <a href="/apply-now" className="p-5 bg-amber-300 text-black rounded-4xl hover:bg-amber-500 transition-all">Apply for Innovators</a>
+
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
