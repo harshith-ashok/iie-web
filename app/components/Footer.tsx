@@ -13,7 +13,7 @@ const products: ProductType[] = [
   {
     id: 1,
     section: "Pages",
-    link: ["About US", "Programs", "Facilities", "Mentors"],
+    link: ["About Us", "Programs", "Facilities", "Mentors"],
     ref: ["/about", "/programs", "/facilities", "/mentors"],
   },
   {
@@ -47,7 +47,7 @@ const Footer = () => {
               <div className="footer-icons">
                 <Link href="https://facebook.com">
                   <Image
-                    src={"/images/footer/vec.svg"}
+                    src={"/images/footer/facebook.svg"}
                     alt="facebook"
                     width={15}
                     height={20}
